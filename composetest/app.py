@@ -68,7 +68,7 @@ def isPrime(numberVar):
     except ValueError:
         return 'ERROR: Value must be a decimal number!'
 
-@app.route('/primesStored')
+@app.route('/primesStored/<ignored>')
 def primesStored():
     try:
         values = get_primes()
